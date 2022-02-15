@@ -33,7 +33,7 @@ This certificate has to be installed on *all devices* where you need the secure 
 ```
 sudo apt-get install -y ca-certificates
 ```
-and copy the CA to /usr/local/share/ca-certificates/ with .crt suffix.
+and copy the CA to /usr/local/share/ca-certificates/ with **.crt suffix**.
 ```
 sudo cp michalCA.pem /usr/local/share/ca-certificates/michalCA.crt
 ```
@@ -41,7 +41,7 @@ then update certificates
 ```
 sudo update-ca-certificates
 ```
-You should see something like _Adding debian:michalCA.pem_ in the output.
+You should see something like _Adding debian:michalCA.crt_ in the output.
 
 ## Webserver with own certificates
 Now I want to create web server (based on nginx) that can be accessed via HTTPS only. For that I need CA-signed certificate.
